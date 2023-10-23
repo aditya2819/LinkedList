@@ -119,7 +119,7 @@ class LinkedList():
           currentNode = currentNode.next
         print(currentNode.data)
   
-  def printIndexAtValue(self, data):
+  def returnIndexAtValue(self, data):
     currentNode = self.head
     position = 0
     if currentNode is not None:
