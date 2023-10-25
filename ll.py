@@ -115,13 +115,13 @@ class LinkedList():
     else:
       print("Value not found")
       
-  def printLinkedListInListForm(self):
+  def returnLinkedListInListForm(self):
     currentNode = self.head
     temp = []
     while currentNode is not None:
       temp.append(currentNode.data)
       currentNode = currentNode.next
-    print(temp)
+    return temp
 
   def printLinkedList(self):
     currentNode = self.head
