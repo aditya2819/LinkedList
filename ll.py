@@ -107,7 +107,14 @@ class LinkedList():
         position += 1
         currentNode = currentNode.next
       print("Index not found")
-  
+
+  def updateByValue(self, data, newdata):
+    index = self.returnIndexAtValue(data)
+    if index is not None:
+      self.updateAtIndex(index)
+    else:
+      print("Value not found")
+      
   def printLinkedListInListForm(self):
     currentNode = self.head
     temp = []
